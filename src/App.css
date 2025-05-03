@@ -36,18 +36,110 @@
 .sub-nav span {
   font-weight: 600;
 }
+
 .hero-section {
-  background-color: wheat;
+  display: flex;
+  align-items: center;
+  background-image: url("../public/top-view-delicious-food-keyboard.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 800px; /* Adjust as needed */
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 70vh;
-  text-align: center;
-  padding-top: 50px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* Places content above the overlay */
+  color: white; /* Light text for dark overlay */
+  padding: 2rem;
+  max-width: 800px; /* For better readability */
+  margin: 0 auto; /* Center the content */
+}
+.hero-content h1 {
+  font-size: clamp(2rem, 8vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.5rem;
+  max-width: 15ch; /* Optimal line length */
+}
+.hero-content h3 {
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 auto 2rem;
+  max-width: 70%;
+}
+.hero-content button {
+  padding: 30px;
+  cursor: pointer;
+  border: none;
 }
 .products {
+  padding-top: 30px;
   background-color: cadetblue;
 }
+.products h1 {
+  font-size: clamp(2rem, 8vw, 4.5rem);
+  color: white;
+  text-align: center;
+}
+.products h3 {
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  color: white;
+  text-align: center;
+}
+.products-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.product-box {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-box img {
+  width: 300px;
+}
+.product-box p {
+  font-size: 15px;
+}
+.product-box span {
+  font-weight: 600;
+}
 .advantages {
-  background-color: chocolate;
+  padding: 50px 150px;
+  background-color: rgb(148, 190, 190);
+}
+.advantages h1 {
+  font-size: clamp(2rem, 8vw, 4.5rem);
+  color: white;
+}
+.advantages ul {
+  margin: 20px 150px;
+  font-size: clamp(2rem, 2vw, 1.35rem);
+  color: white;
 }
 .footer {
   background-color: red;
