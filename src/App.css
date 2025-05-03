@@ -3,12 +3,38 @@
   margin: 0;
 }
 .navbar {
-  background-color: #73bfa3;
-  height: 100px;
+  padding: 10px 0;
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
 }
-.navbar h1 {
-  text-align: center;
-  color: white;
+
+.nav-links {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  gap: 45px;
+}
+.nav-links p {
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav-links p:hover {
+  color: #08402b;
+}
+.sub-nav {
+  background-color: #f4f4f4;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  height: 50px;
+}
+.sub-nav span {
+  font-weight: 600;
 }
 .hero-section {
   background-color: wheat;
@@ -19,9 +45,6 @@
 }
 .products {
   background-color: cadetblue;
-}
-img {
-  width: 200px;
 }
 .advantages {
   background-color: chocolate;
