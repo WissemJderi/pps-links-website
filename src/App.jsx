@@ -12,7 +12,6 @@ function App() {
       <OurProducts />
       <Advantages />
       <Footer />
-      <h1>PPS Links</h1>
     </>
   );
 }

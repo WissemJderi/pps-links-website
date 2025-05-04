@@ -142,5 +142,20 @@
   color: white;
 }
 .footer {
-  background-color: red;
+  background-color: rgb(185, 206, 206);
+  height: 150px;
+  display: flex;
+  padding: 20px 150px;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.row {
+  margin: 10px 90px;
 }
