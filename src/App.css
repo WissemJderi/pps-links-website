@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
 }
+.main {
+  position: sticky;
+  top: 0; /* Sticks the navbar to the top of the viewport */
+  z-index: 1000; /* Ensures it stays above other elements */
+  background-color: #73bfa3; /* Add a background color to avoid transparency issues */
+}
 .navbar {
   padding: 10px 0;
   margin: 0 10%;
@@ -158,4 +164,8 @@
 
 .row {
   margin: 10px 90px;
+}
+
+.cr {
+  text-align: center;
 }
